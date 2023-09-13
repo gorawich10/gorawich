@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cafe Amazon Website Landing Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="amazon.jpg" class="logo"></a>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Café Amazon</h2>
+                <p>Café Amazon  is a chain of Thai coffeehouses owned by PTT Public Company Limited. The cafes are primarily found inside of malls, in city centres and petrol/gas stations.
+                    There are more than 3,333 Café Amazon stores located around the world, making it the sixth largest coffee chain by number of outlets worldwide.In April 2019, 
+                    Café Amazon opened its first international flagship store in Jewel Changi Airport. The only special thing in this Café Amazon is, sugar additives and soft drinks are not allowed. 
+                    Café Amazon in Singapore officially closed with the final outlet at Jewel Changi Airport closed in 2021</p> 
+                
+            </div>
+            <div class="imgBox">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">   
+                    <img src="amazon1.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="amazon2.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="amazon3.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="amazon4.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="amazon5.png">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="amazon6.png">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li> 
+            <a href="https://www.facebook.com/cafeamazonofficial" target="_blank">Café Amazon</a>
+
+            <li><a href="#"><img src="instagram.png"></a></li>
+            <a href="https://www.instagram.com/cafeamazonofficial/" target="_blank">Café Amazon</a>
+        </ul>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+       var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 250,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+</html>
